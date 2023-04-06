@@ -1,0 +1,128 @@
+.navbar {
+    background-color: rgb(238, 133, 250);
+    box-shadow: 0 1px 4px rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 5rem;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.navbar-nav {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+    margin-left: 5rem;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.active {
+    color: #007bff !important;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-brand {
+        margin-bottom: 10px;
+    }
+
+    .navbar-menu {
+        width: 100%;
+        background-color: #f9f9f9;
+        padding: 20px;
+    }
+
+    .navbar-nav {
+        /* flex-direction: row; */
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .nav-link {
+        margin-right: 10px;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .nav-link:hover {
+        background-color: #ddd;
+        color: #fff;
+    }
+
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    .fas {
+        font-size: 20px;
+        color: #fff;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .fas:hover {
+        color: #007bff;
+    }
+
+    .open {
+        display: flex;
+    }
+}
