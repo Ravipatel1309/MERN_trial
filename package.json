@@ -2,10 +2,10 @@
   "name": "trial",
   "version": "1.0.0",
   "description": "",
-  "main": "./backend/server.js",
+  "main": "./backend/index.js",
   "type": "module",
   "scripts": {
-    "start": "cd ./backend && node server.js",
+    "start": "cd ./backend && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
